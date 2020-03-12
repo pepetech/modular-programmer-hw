@@ -3,20 +3,234 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Sheet 6 7
+Title "Modular-programmer"
+Date "2020-03-03"
+Rev "1.0"
+Comp "Pepetech"
+Comment1 "Creative Commons Attribution-ShareAlike 4.0 International License"
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Co-designer: João Silva"
+Comment4 "Designer: Rafael Silva"
 $EndDescr
-Text HLabel 9400 2850 0    50   Output ~ 0
+Text HLabel 5700 3300 2    50   Output ~ 0
 USB_DM
-Text HLabel 9400 2950 0    50   Output ~ 0
+Text HLabel 5700 3400 2    50   Output ~ 0
 USB_DP
-Text HLabel 9400 2700 0    50   Output ~ 0
-USB_VBUS
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 5E6B6DFC
+P 4900 3300
+F 0 "J?" H 5007 4167 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 5007 4076 50  0000 C CNN
+F 2 "" H 5050 3300 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5050 3300 50  0001 C CNN
+	1    4900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3400 5600 3400
+Wire Wire Line
+	5500 3500 5600 3500
+Wire Wire Line
+	5600 3500 5600 3400
+Connection ~ 5600 3400
+Wire Wire Line
+	5600 3400 5700 3400
+Wire Wire Line
+	5500 3200 5600 3200
+Wire Wire Line
+	5600 3200 5600 3300
+Wire Wire Line
+	5600 3300 5700 3300
+Wire Wire Line
+	5500 3300 5600 3300
+Connection ~ 5600 3300
+Wire Wire Line
+	5750 2700 5750 2500
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5E6B9537
+P 5750 2400
+F 0 "F?" H 5818 2446 50  0000 L CNN
+F 1 "500mA" H 5818 2355 50  0000 L CNN
+F 2 "" H 5800 2200 50  0001 L CNN
+F 3 "~" H 5750 2400 50  0001 C CNN
+	1    5750 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2300 5750 2100
+$Comp
+L Device:R_Small R?
+U 1 1 5E6BB888
+P 6000 2900
+F 0 "R?" V 5900 2650 50  0000 C CNN
+F 1 "5.11kΩ" V 5895 2900 50  0000 C CNN
+F 2 "" H 6000 2900 50  0001 C CNN
+F 3 "~" H 6000 2900 50  0001 C CNN
+	1    6000 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E6BC592
+P 6000 3000
+F 0 "R?" V 6100 2750 50  0000 C CNN
+F 1 "5.11kΩ" V 6100 3000 50  0000 C CNN
+F 2 "" H 6000 3000 50  0001 C CNN
+F 3 "~" H 6000 3000 50  0001 C CNN
+	1    6000 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 2900 6300 2900
+Wire Wire Line
+	6300 2900 6300 3000
+Wire Wire Line
+	6100 3000 6300 3000
+Connection ~ 6300 3000
+Wire Wire Line
+	6300 3000 6300 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5E6BE57B
+P 6300 3100
+F 0 "#PWR?" H 6300 2850 50  0001 C CNN
+F 1 "GND" H 6305 2927 50  0000 C CNN
+F 2 "" H 6300 3100 50  0001 C CNN
+F 3 "" H 6300 3100 50  0001 C CNN
+	1    6300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4200 4900 4300
+Wire Wire Line
+	4600 4200 4600 4300
+Wire Wire Line
+	4600 4300 4450 4300
+Wire Wire Line
+	4450 4300 4450 4400
+Connection ~ 4600 4300
+Wire Wire Line
+	4600 4300 4600 4400
+$Comp
+L Device:R_Small R?
+U 1 1 5E6BF283
+P 4600 4500
+F 0 "R?" H 4550 4550 50  0000 R CNN
+F 1 "1MΩ" H 4550 4650 50  0000 R CNN
+F 2 "" H 4600 4500 50  0001 C CNN
+F 3 "~" H 4600 4500 50  0001 C CNN
+	1    4600 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E6BFCD2
+P 4450 4500
+F 0 "C?" H 4200 4550 50  0000 L CNN
+F 1 "47nF" H 4150 4450 50  0000 L CNN
+F 2 "" H 4450 4500 50  0001 C CNN
+F 3 "~" H 4450 4500 50  0001 C CNN
+	1    4450 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4600 4450 4700
+Wire Wire Line
+	4450 4700 4600 4700
+Wire Wire Line
+	4600 4700 4600 4800
+Wire Wire Line
+	4600 4600 4600 4700
+Connection ~ 4600 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5E6C0B4E
+P 4600 4800
+F 0 "#PWR?" H 4600 4550 50  0001 C CNN
+F 1 "GND" H 4605 4627 50  0000 C CNN
+F 2 "" H 4600 4800 50  0001 C CNN
+F 3 "" H 4600 4800 50  0001 C CNN
+	1    4600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E6C1141
+P 4900 4300
+F 0 "#PWR?" H 4900 4050 50  0001 C CNN
+F 1 "GND" H 4905 4127 50  0000 C CNN
+F 2 "" H 4900 4300 50  0001 C CNN
+F 3 "" H 4900 4300 50  0001 C CNN
+	1    4900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5E8C6541
+P 5750 2100
+F 0 "#PWR?" H 5750 1950 50  0001 C CNN
+F 1 "VBUS" H 5765 2273 50  0000 C CNN
+F 2 "" H 5750 2100 50  0001 C CNN
+F 3 "" H 5750 2100 50  0001 C CNN
+	1    5750 2100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3500 1500 8000 1500
+Wire Notes Line
+	8000 1500 8000 5500
+Wire Notes Line
+	8000 5500 3500 5500
+Wire Notes Line
+	3500 5500 3500 1500
+Text Notes 3600 1650 0    50   ~ 0
+USB C power and data
+$Comp
+L power:VBUS #PWR?
+U 1 1 5E950B45
+P 6200 2100
+F 0 "#PWR?" H 6200 1950 50  0001 C CNN
+F 1 "VBUS" H 6215 2273 50  0000 C CNN
+F 2 "" H 6200 2100 50  0001 C CNN
+F 3 "" H 6200 2100 50  0001 C CNN
+	1    6200 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2100 6200 2200
+$Comp
+L Device:C_Small C?
+U 1 1 5E9512A0
+P 6200 2300
+F 0 "C?" H 6300 2350 50  0000 L CNN
+F 1 "47uF" H 6300 2250 50  0000 L CNN
+F 2 "" H 6200 2300 50  0001 C CNN
+F 3 "~" H 6200 2300 50  0001 C CNN
+	1    6200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2400 6200 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5E952003
+P 6200 2500
+F 0 "#PWR?" H 6200 2250 50  0001 C CNN
+F 1 "GND" H 6205 2327 50  0000 C CNN
+F 2 "" H 6200 2500 50  0001 C CNN
+F 3 "" H 6200 2500 50  0001 C CNN
+	1    6200 2500
+	1    0    0    -1  
+$EndComp
+Text Notes 6500 2950 0    50   ~ 0
+TODO: Add TVS?\n
+Wire Wire Line
+	5750 2700 5500 2700
+Wire Wire Line
+	5500 2900 5900 2900
+Wire Wire Line
+	5500 3000 5900 3000
 $EndSCHEMATC

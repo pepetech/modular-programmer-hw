@@ -3,39 +3,39 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Sheet 4 7
+Title "Modular-programmer"
+Date "2020-03-03"
+Rev "1.0"
+Comp "Pepetech"
+Comment1 "Creative Commons Attribution-ShareAlike 4.0 International License"
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Co-designer: João Silva"
+Comment4 "Designer: Rafael Silva"
 $EndDescr
-Text HLabel 3900 3250 0    50   Output ~ 0
-VCC
-Text HLabel 3900 3350 0    50   Output ~ 0
+Text HLabel 4050 3250 0    50   Output ~ 0
+VTARGET
+Text HLabel 4050 3350 0    50   Output ~ 0
 TRST
-Text HLabel 3900 3450 0    50   Output ~ 0
+Text HLabel 4050 3450 0    50   Output ~ 0
 TDI
-Text HLabel 3900 3550 0    50   Output ~ 0
+Text HLabel 4050 3550 0    50   Output ~ 0
 SWDIO_TMS
-Text HLabel 3900 3650 0    50   Output ~ 0
+Text HLabel 4050 3650 0    50   Output ~ 0
 SWCLK_TCLK
-Text HLabel 3900 3750 0    50   Output ~ 0
+Text HLabel 4050 3750 0    50   Output ~ 0
 RTCK
-Text HLabel 3900 3850 0    50   Output ~ 0
+Text HLabel 4050 3850 0    50   Output ~ 0
 SWO_TDO
-Text HLabel 3900 3950 0    50   Output ~ 0
+Text HLabel 4050 3950 0    50   Output ~ 0
 RESET
 $Bitmap
-Pos 7750 3550
+Pos 7700 3700
 Scale 2.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 00 FA 00 00 00 F8 08 02 00 00 00 4A 46 6C 
-61 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 09 70 48 59 73 00 00 0B 12 00 00 0B 12 
-01 D2 DD 7E FC 00 00 20 00 49 44 41 54 78 9C EC 3D 67 78 55 45 D3 B3 7B DA BD 69 24 10 7A 02 24 
+61 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 09 70 48 59 73 00 00 0A F0 00 00 0A F0 
+01 42 AC 34 98 00 00 20 00 49 44 41 54 78 9C EC 3D 67 78 55 45 D3 B3 7B DA BD 69 24 10 7A 02 24 
 10 20 54 E9 A0 F8 4A 15 04 B1 02 2A 20 16 10 14 14 5F 2C 88 80 8A 88 82 08 22 52 95 22 2A D2 04 
 44 01 B1 22 2A 82 54 E9 45 7A 97 9A 90 E4 96 53 76 F7 FB 31 F7 AE 87 04 22 89 BE 10 3E 33 4F 9E 
 3C 37 37 E7 EC 99 33 3B 3B 3B 3B 95 08 21 E0 DA 00 CF CC C8 98 39 73 E6 EA D5 AB 19 63 A9 A9 A9 
@@ -1444,4 +1444,99 @@ FA F5 C3 4A 6E D4 72 B3 CB B8 F5 C6 59 DB 36 95 95 95 85 51 F3 F6 C8 4C 8A FC 3F
 35 99 55 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J?
+U 1 1 5E6954B5
+P 4450 3650
+F 0 "J?" H 4500 4350 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 4500 4250 50  0000 C CNN
+F 2 "" H 4450 3650 50  0001 C CNN
+F 3 "~" H 4450 3650 50  0001 C CNN
+	1    4450 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3350 4850 3350
+Wire Wire Line
+	4850 3350 4850 3450
+Wire Wire Line
+	4750 4150 4850 4150
+Connection ~ 4850 4150
+Wire Wire Line
+	4850 4150 4850 4250
+Wire Wire Line
+	4750 4050 4850 4050
+Connection ~ 4850 4050
+Wire Wire Line
+	4850 4050 4850 4150
+Wire Wire Line
+	4750 3950 4850 3950
+Connection ~ 4850 3950
+Wire Wire Line
+	4850 3950 4850 4050
+Wire Wire Line
+	4750 3850 4850 3850
+Connection ~ 4850 3850
+Wire Wire Line
+	4850 3850 4850 3950
+Wire Wire Line
+	4750 3750 4850 3750
+Connection ~ 4850 3750
+Wire Wire Line
+	4850 3750 4850 3850
+Wire Wire Line
+	4750 3650 4850 3650
+Connection ~ 4850 3650
+Wire Wire Line
+	4850 3650 4850 3750
+Wire Wire Line
+	4750 3550 4850 3550
+Connection ~ 4850 3550
+Wire Wire Line
+	4850 3550 4850 3650
+Wire Wire Line
+	4750 3450 4850 3450
+Connection ~ 4850 3450
+Wire Wire Line
+	4850 3450 4850 3550
+NoConn ~ 4250 4050
+NoConn ~ 4250 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5E699B1F
+P 4850 4250
+F 0 "#PWR?" H 4850 4000 50  0001 C CNN
+F 1 "GND" H 4855 4077 50  0000 C CNN
+F 2 "" H 4850 4250 50  0001 C CNN
+F 3 "" H 4850 4250 50  0001 C CNN
+	1    4850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3950 4250 3950
+Wire Wire Line
+	4050 3350 4250 3350
+Wire Wire Line
+	4050 3450 4250 3450
+Wire Wire Line
+	4050 3550 4250 3550
+Wire Wire Line
+	4050 3650 4250 3650
+Wire Wire Line
+	4050 3750 4250 3750
+Wire Wire Line
+	4050 3850 4250 3850
+Wire Wire Line
+	4050 3250 4250 3250
+NoConn ~ 4750 3250
+Wire Notes Line
+	3000 2500 6000 2500
+Wire Notes Line
+	6000 2500 6000 5000
+Wire Notes Line
+	6000 5000 3000 5000
+Wire Notes Line
+	3000 5000 3000 2500
+Text Notes 3050 2650 0    50   ~ 0
+Target connector
 $EndSCHEMATC
