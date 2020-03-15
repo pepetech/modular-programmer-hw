@@ -13,21 +13,21 @@ Comment2 ""
 Comment3 "Co-designer: João Silva"
 Comment4 "Designer: Rafael Silva"
 $EndDescr
-Text HLabel 4050 3250 0    50   Output ~ 0
-VTARGET
-Text HLabel 4050 3350 0    50   Output ~ 0
-TRST
-Text HLabel 4050 3450 0    50   Output ~ 0
-TDI
 Text HLabel 4050 3550 0    50   Output ~ 0
-SWDIO_TMS
-Text HLabel 4050 3650 0    50   Output ~ 0
-SWCLK_TCLK
-Text HLabel 4050 3750 0    50   Output ~ 0
-RTCK
-Text HLabel 4050 3850 0    50   Output ~ 0
-SWO_TDO
+VTARGET
 Text HLabel 4050 3950 0    50   Output ~ 0
+TRST
+Text HLabel 4950 3850 2    50   Output ~ 0
+TDI
+Text HLabel 4950 3550 2    50   Output ~ 0
+SWDIO_TMS
+Text HLabel 4950 3650 2    50   Output ~ 0
+SWCLK_TCLK
+Text HLabel 4050 3850 0    50   Output ~ 0
+RTCK
+Text HLabel 4950 3750 2    50   Output ~ 0
+SWO_TDO
+Text HLabel 4950 3950 2    50   Output ~ 0
 RESET
 $Bitmap
 Pos 7700 3700
@@ -1444,91 +1444,22 @@ FA F5 C3 4A 6E D4 72 B3 CB B8 F5 C6 59 DB 36 95 95 95 85 51 F3 F6 C8 4C 8A FC 3F
 35 99 55 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-$Comp
-L Connector_Generic:Conn_02x10_Odd_Even J?
-U 1 1 5E6954B5
-P 4450 3650
-F 0 "J?" H 4500 4350 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 4500 4250 50  0000 C CNN
-F 2 "" H 4450 3650 50  0001 C CNN
-F 3 "~" H 4450 3650 50  0001 C CNN
-	1    4450 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4750 3350 4850 3350
-Wire Wire Line
-	4850 3350 4850 3450
-Wire Wire Line
-	4750 4150 4850 4150
-Connection ~ 4850 4150
-Wire Wire Line
-	4850 4150 4850 4250
-Wire Wire Line
-	4750 4050 4850 4050
-Connection ~ 4850 4050
-Wire Wire Line
-	4850 4050 4850 4150
-Wire Wire Line
-	4750 3950 4850 3950
-Connection ~ 4850 3950
-Wire Wire Line
-	4850 3950 4850 4050
-Wire Wire Line
-	4750 3850 4850 3850
-Connection ~ 4850 3850
-Wire Wire Line
-	4850 3850 4850 3950
-Wire Wire Line
-	4750 3750 4850 3750
-Connection ~ 4850 3750
-Wire Wire Line
-	4850 3750 4850 3850
-Wire Wire Line
-	4750 3650 4850 3650
-Connection ~ 4850 3650
-Wire Wire Line
-	4850 3650 4850 3750
-Wire Wire Line
-	4750 3550 4850 3550
-Connection ~ 4850 3550
-Wire Wire Line
-	4850 3550 4850 3650
-Wire Wire Line
-	4750 3450 4850 3450
-Connection ~ 4850 3450
-Wire Wire Line
-	4850 3450 4850 3550
-NoConn ~ 4250 4050
-NoConn ~ 4250 4150
-$Comp
-L power:GND #PWR?
-U 1 1 5E699B1F
-P 4850 4250
-F 0 "#PWR?" H 4850 4000 50  0001 C CNN
-F 1 "GND" H 4855 4077 50  0000 C CNN
-F 2 "" H 4850 4250 50  0001 C CNN
-F 3 "" H 4850 4250 50  0001 C CNN
-	1    4850 4250
-	1    0    0    -1  
-$EndComp
+	4950 3950 4750 3950
 Wire Wire Line
 	4050 3950 4250 3950
 Wire Wire Line
-	4050 3350 4250 3350
+	4950 3850 4750 3850
 Wire Wire Line
-	4050 3450 4250 3450
+	4950 3550 4750 3550
 Wire Wire Line
-	4050 3550 4250 3550
-Wire Wire Line
-	4050 3650 4250 3650
-Wire Wire Line
-	4050 3750 4250 3750
+	4950 3650 4750 3650
 Wire Wire Line
 	4050 3850 4250 3850
 Wire Wire Line
-	4050 3250 4250 3250
-NoConn ~ 4750 3250
+	4950 3750 4750 3750
+Wire Wire Line
+	4050 3550 4250 3550
 Wire Notes Line
 	3000 2500 6000 2500
 Wire Notes Line
@@ -1539,4 +1470,37 @@ Wire Notes Line
 	3000 5000 3000 2500
 Text Notes 3050 2650 0    50   ~ 0
 Target connector
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5E73D401
+P 4450 3750
+F 0 "J?" H 4500 4167 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 4500 4076 50  0000 C CNN
+F 2 "" H 4450 3750 50  0001 C CNN
+F 3 "~" H 4450 3750 50  0001 C CNN
+	1    4450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3650 4150 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5E7406E4
+P 4050 3700
+F 0 "#PWR?" H 4050 3450 50  0001 C CNN
+F 1 "GND" H 4055 3527 50  0000 C CNN
+F 2 "" H 4050 3700 50  0001 C CNN
+F 3 "" H 4050 3700 50  0001 C CNN
+	1    4050 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 3750 4150 3750
+Wire Wire Line
+	4150 3750 4150 3700
+Wire Wire Line
+	4050 3700 4150 3700
+Connection ~ 4150 3700
+Wire Wire Line
+	4150 3700 4150 3650
 $EndSCHEMATC
