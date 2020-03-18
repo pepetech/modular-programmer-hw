@@ -1471,12 +1471,12 @@ Wire Notes Line
 Text Notes 3050 2650 0    50   ~ 0
 Target connector
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
+L Connector_Generic:Conn_02x05_Odd_Even J401
 U 1 1 5E73D401
 P 4450 3750
-F 0 "J?" H 4500 4167 50  0000 C CNN
+F 0 "J401" H 4500 4167 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 4500 4076 50  0000 C CNN
-F 2 "" H 4450 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4450 3750 50  0001 C CNN
 F 3 "~" H 4450 3750 50  0001 C CNN
 	1    4450 3750
 	1    0    0    -1  
@@ -1484,10 +1484,10 @@ $EndComp
 Wire Wire Line
 	4250 3650 4150 3650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0401
 U 1 1 5E7406E4
 P 4050 3700
-F 0 "#PWR?" H 4050 3450 50  0001 C CNN
+F 0 "#PWR0401" H 4050 3450 50  0001 C CNN
 F 1 "GND" H 4055 3527 50  0000 C CNN
 F 2 "" H 4050 3700 50  0001 C CNN
 F 3 "" H 4050 3700 50  0001 C CNN
